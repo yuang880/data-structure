@@ -19,6 +19,9 @@ public class StudentTest {
         return c2;
     }
 
+    /**
+     * 这里是测试学生类的年龄比较。
+     */
     @Test
     public void getMaxAge(){
         Student t1 = new Student("zhangsan", 40);
