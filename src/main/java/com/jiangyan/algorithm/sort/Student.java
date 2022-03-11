@@ -17,7 +17,6 @@ public class Student implements Comparable<Student>{
     private String userName;
     private int age;
 
-
     /**
      * 重写比较规则。
      * @param o 要比较的对象
