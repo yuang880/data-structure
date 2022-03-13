@@ -1,15 +1,16 @@
-package com.jiangyan.algorithm.sort;
+package com.jiangyan.algorithm.sortTest;
+
+import com.jiangyan.algorithm.sort.MyBubble;
 
 import java.util.Arrays;
 
 /**
- * 插入排序的测试
  * @author zhang
  */
-public class MyInsertionTest {
+public class MyBubbleTest{
     public static void main(String[] args) {
         Integer[] arr = {4, 5, 3, 1, 9, 7};
-        MyInsertion.sort(arr);
+        MyBubble.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }

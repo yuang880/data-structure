@@ -1,5 +1,6 @@
-package com.jiangyan.algorithm.sort;
+package com.jiangyan.algorithm.sortTest;
 
+import com.jiangyan.algorithm.sort.Student;
 import org.junit.Test;
 
 /**
@@ -9,7 +10,7 @@ import org.junit.Test;
 public class StudentTest {
 
     public static Comparable<Student> studentComparable(Comparable<Student> c1,
-                                                Comparable<Student> c2){
+                                                        Comparable<Student> c2){
         int result = c1.compareTo((Student) c2);
         // 如果result为正，c1大
         if(result >= 0){

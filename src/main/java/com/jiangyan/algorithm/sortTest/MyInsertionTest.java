@@ -1,15 +1,17 @@
-package com.jiangyan.algorithm.sort;
+package com.jiangyan.algorithm.sortTest;
+
+import com.jiangyan.algorithm.sort.MyInsertion;
 
 import java.util.Arrays;
 
 /**
- * 希尔排序的测试。
+ * 插入排序的测试
  * @author zhang
  */
-public class MyShellTest {
+public class MyInsertionTest {
     public static void main(String[] args) {
         Integer[] arr = {4, 5, 3, 1, 9, 7};
-        MyShell.sort(arr);
+        MyInsertion.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
