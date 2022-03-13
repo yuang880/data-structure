@@ -1,7 +1,5 @@
 package com.jiangyan.algorithm.sort;
 
-import com.sun.org.apache.bcel.internal.generic.RET;
-
 /**
  * 归并排序
  * @author zhang
@@ -78,8 +76,5 @@ public class MyMerge {
         for(int index = lo; index<=hi; index++){
             a[index] = assist[index];
         }
-
-
     }
-
 }
