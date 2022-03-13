@@ -1,26 +1,37 @@
 package com.jiangyan.algorithm.sort;
 
 /**
- * 插入排序
+ * 希尔排序
  * @author zhang
  */
-public class MyInsertion {
+public class MyShell {
     /**
      * 排序
      * @param a 传进来的要排序的数组
      */
     public static void sort(Comparable[] a){
-        for(int i = 1; i < a.length; i++){
-            // a[i]与之前的元素比较大小，找到小于a[i]的元素，交换
-            for(int j = i; j > 0; j--){
-                if(greater(a[j - 1], a[j])){
-                    exch(a, j - 1, j);
-                }else {
-                    break;
+        //1.根据a.length确定h的初始值
+        int h = 1;
+        while (h < a.length / 2){
+            h = h * 2 +1;
+        }
+        //2.
+        while (h >= 1) {
+            // 找到待插入的元素
+            for(int i = h; i <a.length; i++){
+                // 插入排序
+                for(int j = i; j >= h; j -=h){
+                    if(greater(a[j - 1], a[j])){
+                        exch(a, j-h, j);
+                    }else {
+                        break;
+                    }
                 }
             }
+            h = h / 2;
 
         }
+
     }
 
     /**
