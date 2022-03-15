@@ -1,7 +1,5 @@
 package com.jiangyan.algorithm.sort;
 
-import java.util.concurrent.CompletableFuture;
-
 /**
  * 快速排序
  * @author zhang
@@ -57,7 +55,6 @@ public class MyQuick {
                     break;
                 }
             }
-            //
             if(left >= right){
                 break;
             }else {
@@ -67,5 +64,4 @@ public class MyQuick {
         exch(a, lo, right);
         return  right;
     }
-
 }
