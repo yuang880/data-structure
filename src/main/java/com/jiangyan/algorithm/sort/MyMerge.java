@@ -5,7 +5,11 @@ package com.jiangyan.algorithm.sort;
  * @author zhang
  */
 public class MyMerge {
-    //归并需要的辅助数组
+
+    /**
+     * 归并需要的辅助数组
+     * Comparable[]这里离可以加泛型
+     */
     private static Comparable[] assist;
 
     /**
@@ -47,7 +51,6 @@ public class MyMerge {
         sort(a, mid + 1, hi);
         merge(a, lo, mid, hi);
     }
-
     /**
      * 两组合并
      */
