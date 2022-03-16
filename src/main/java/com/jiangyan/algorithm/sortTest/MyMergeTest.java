@@ -1,6 +1,5 @@
 package com.jiangyan.algorithm.sortTest;
 
-import com.jiangyan.algorithm.sort.MyInsertion;
 import com.jiangyan.algorithm.sort.MyMerge;
 
 import java.util.Arrays;
