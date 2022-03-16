@@ -1,10 +1,12 @@
 package com.jiangyan.algorithm.linear;
 
+import java.util.Iterator;
+
 /**
  * 顺序表
  * @author zhang
  */
-public class SequenceList<T> {
+public class SequenceList<T> implements Iterable<T> {
     // 存储元素的数组
     private T[] eles;
 
@@ -71,4 +73,27 @@ public class SequenceList<T> {
         return -1;
     }
 
+    @Override
+    public Iterator<T> iterator() {
+        return new SIterator();
+    }
+
+
+    private class SIterator implements Iterator{
+        private int cusor;
+
+        public SIterator() {
+            this.cusor = 0;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return cusor < N;
+        }
+
+        @Override
+        public Object next() {
+            return eles[cusor++];
+        }
+    }
 }

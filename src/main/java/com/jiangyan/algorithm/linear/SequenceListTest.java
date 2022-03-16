@@ -14,8 +14,8 @@ public class SequenceListTest {
         list.insert(6);
         list.insert(8);
         list.insert(4, 5);
-        for (int i = 0; i < list.length(); i++) {
-            System.out.println(list.get(i));
+        for (Integer i : list) {
+            System.out.println(i);
         }
     }
 }
