@@ -1,5 +1,6 @@
 package com.jiangyan.algorithm.linear;
 
+import javax.swing.plaf.ViewportUI;
 import java.util.Iterator;
 
 /**
@@ -125,5 +126,24 @@ public class MyLinkedList<T> implements Iterable<T>{
             }
         }
         return -1;
+    }
+
+    // 单链表反转
+    public void reverse(){
+        if(isEmpty()){
+            return;
+        }
+        reverse(head.nextNode);
+    }
+
+    public Node reverse(Node curr){
+        if(curr.nextNode == null){
+            head.nextNode = curr;
+            return curr;
+        }
+        Node pre = reverse(curr.nextNode);
+        pre.nextNode = curr;
+        curr.nextNode = null;
+        return curr;
     }
 }
