@@ -1,7 +1,7 @@
 package com.jiangyan.algorithm.linear;
 
 /**
- * 括号匹配问题
+ * 使用栈来解决括号匹配问题
  */
 public class BracketsMathTest {
     public static void main(String[] args) {
